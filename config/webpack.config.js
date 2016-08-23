@@ -82,7 +82,7 @@ module.exports = (grunt, release) => {
     if (release) {
         ret.plugins.push(new webpack.optimize.UglifyJsPlugin({
             sourceMap: false,
-            mangle: false
+            mangle: true
         }));
         ret.sourcemaps = false;
         ret.debug = false;

@@ -42,5 +42,6 @@ And open browser at http://localhost:8080
 
 To build release version, use the following command:
 
-```grunt release```
+```grunt release api:wait```
 
+And open browser at http://localhost:8081
