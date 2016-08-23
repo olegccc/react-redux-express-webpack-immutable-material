@@ -1,0 +1,67 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  .header {
+    flex: 0;
+  }
+
+  .middle {
+
+    display: flex;
+    flex-direction: row;
+
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 350px;
+      box-shadow: rgba(0, 0, 0, 0.156863) 0 3px 10px, rgba(0, 0, 0, 0.156863) 0 3px 10px;
+
+      .list {
+
+        overflow-y: auto;
+        flex: 1 1;
+
+        .list-item > div > div {
+          padding: 0 !important;
+        }
+
+        .list-item.selected {
+          background-color: #ddd !important;
+        }
+
+        a {
+          display: block;
+          text-decoration: none;
+          color: inherit;
+          padding: 16px;
+        }
+      }
+    }
+
+    .content {
+      padding: 1em;
+    }
+
+    flex: 1 1;
+  }
+
+  .footer {
+    flex: 0 0;
+  }
+}
+
+.dialog {
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    flex: 100%;
+  }
+}
