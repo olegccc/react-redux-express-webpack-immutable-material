@@ -30,7 +30,7 @@ Used tools / technologies / languages:
 * [Colorguard](https://github.com/SlexAxton/css-colorguard)
 * [Lodash](https://lodash.com/)
 * [Font magician](https://github.com/jonathantneal/postcss-font-magician)
-* [Tingodb](http://www.tingodb.com/) just as simplest option to provide minimal database features
+* [Tingodb](http://www.tingodb.com/) just as simplest MongoDB-like option to provide minimal database features
 
 ## Run commands
 
