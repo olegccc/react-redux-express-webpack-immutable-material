@@ -7,7 +7,7 @@ const Header = ({dispatch}) => {
     return (
         <div className="header">
             <AppBar
-                title="React application boilerplate"
+                title="ReactJS"
                 onLeftIconButtonTouchTap={() => dispatch(StateActionCreators.toggleSidebar())}
             />
         </div>

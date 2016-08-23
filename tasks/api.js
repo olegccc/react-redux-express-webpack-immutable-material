@@ -20,7 +20,9 @@ module.exports = grunt => {
             await(database.initialize('./db'));
 
             const app = express();
-            app.use(express.static('frontend-compiled'));
+            const staticFiles = express.static('frontend-compiled');
+            app.use(staticFiles);
+            app.use(/\/record\/(.+)$/, staticFiles);
 
             await(restControllers(app, {
                 debug: grunt.log.debug,
